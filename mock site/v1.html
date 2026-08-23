@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Inc. (TNVA) - Stock Quote</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: #1a252f; color: #fff; padding: 20px; display: flex; align-items: baseline; justify-content: space-between; }
+        .company-name { margin: 0; font-size: 24px; font-weight: normal; }
+        .ticker-symbol { font-size: 18px; color: #bdc3c7; margin-left: 10px; }
+        .price-section { padding: 30px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .stock-price { font-size: 48px; font-weight: bold; }
+        .change-percent { font-size: 20px; margin-left: 15px; font-weight: bold; }
+        .change-percent.positive { color: #2ecc71; }
+        .change-value { font-size: 18px; color: #7f8c8d; margin-left: 10px; }
+        .metrics-section { padding: 20px; }
+        .key-metrics { width: 100%; border-collapse: collapse; }
+        .key-metrics td { padding: 12px 15px; border-bottom: 1px solid #f1f2f6; }
+        .metric-label { color: #7f8c8d; font-weight: bold; width: 40%; }
+        .metric-value { font-weight: bold; text-align: right; }
+        .footer { background: #ecf0f1; padding: 15px; text-align: center; font-size: 12px; color: #95a5a6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="company-name">TechNova Inc.</h1>
+                <span class="ticker-symbol">(TNVA)</span>
+            </div>
+        </div>
+        <div class="price-section">
+            <span class="stock-price">$342.57</span>
+            <span class="change-percent positive">+2.43%</span>
+            <span class="change-value">+$8.12</span>
+        </div>
+        <div class="metrics-section">
+            <table class="key-metrics">
+                <tr id="metric-market-cap">
+                    <td class="metric-label">Market Cap</td>
+                    <td class="metric-value">$1.28T</td>
+                </tr>
+                <tr id="metric-pe-ratio">
+                    <td class="metric-label">P/E Ratio</td>
+                    <td class="metric-value">28.5</td>
+                </tr>
+                <tr id="metric-volume">
+                    <td class="metric-label">Volume</td>
+                    <td class="metric-value">12.4M</td>
+                </tr>
+                <tr id="metric-52w-high">
+                    <td class="metric-label">52-Week High</td>
+                    <td class="metric-value">$385.00</td>
+                </tr>
+                <tr id="metric-52w-low">
+                    <td class="metric-label">52-Week Low</td>
+                    <td class="metric-value">$245.30</td>
+                </tr>
+                <tr id="metric-div-yield">
+                    <td class="metric-label">Dividend Yield</td>
+                    <td class="metric-value">0.82%</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            Data as of Aug 21, 2026 | Mock Financial Data for Demo
+        </div>
+    </div>
+</body>
+</html>

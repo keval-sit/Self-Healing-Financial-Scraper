@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TNVA | TechNova Inc. - Equity Details</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 2rem; }
+        .main-container { max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem; }
+        .equity-header { background: #1e293b; border-radius: 12px; padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border: 1px solid #334155; }
+        .eq-title { margin: 0; font-size: 1.8rem; font-weight: 600; color: #e2e8f0; }
+        .sym-badge { background: #3b82f6; color: white; padding: 4px 12px; border-radius: 9999px; font-weight: bold; font-size: 0.9rem; }
+        .price-card { background: #1e293b; border-radius: 12px; padding: 2rem; text-align: center; border: 1px solid #334155; }
+        .ltp-container { display: flex; justify-content: center; align-items: baseline; gap: 1rem; }
+        .last-traded-price { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
+        .pct-change { font-size: 1.25rem; font-weight: 600; padding: 4px 12px; border-radius: 6px; }
+        .pct-change.gain { background: rgba(16, 185, 129, 0.1); color: #34d399; }
+        .fundamentals-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 0; }
+        .fund-item { background: #1e293b; border-radius: 12px; padding: 1.5rem; border: 1px solid #334155; }
+        .fund-item dt { color: #94a3b8; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .fund-item dd { margin: 0; font-size: 1.5rem; font-weight: 700; color: #f1f5f9; }
+        .site-footer { text-align: center; color: #64748b; font-size: 0.875rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #334155; }
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <article class="equity-header" data-symbol="TNVA">
+            <h2 class="eq-title">TechNova Inc.</h2>
+            <span class="sym-badge" data-ticker="TNVA">TNVA</span>
+        </article>
+        
+        <section class="price-card">
+            <div class="ltp-container">
+                <p class="last-traded-price" data-value="342.57">$342.57</p>
+                <span class="pct-change gain" data-change="2.43">+2.43%</span>
+            </div>
+        </section>
+
+        <section>
+            <dl class="fundamentals-list">
+                <div class="fund-item" data-metric="market_cap">
+                    <dt>Mkt Cap</dt>
+                    <dd class="fund-val">$1.28T</dd>
+                </div>
+                <div class="fund-item" data-metric="pe_ratio">
+                    <dt>PE (TTM)</dt>
+                    <dd class="fund-val">28.5</dd>
+                </div>
+                <div class="fund-item" data-metric="volume">
+                    <dt>Traded Vol</dt>
+                    <dd class="fund-val">12.4M</dd>
+                </div>
+                <div class="fund-item" data-metric="52w_high">
+                    <dt>52W High</dt>
+                    <dd class="fund-val">$385.00</dd>
+                </div>
+                <div class="fund-item" data-metric="52w_low">
+                    <dt>52W Low</dt>
+                    <dd class="fund-val">$245.30</dd>
+                </div>
+                <div class="fund-item" data-metric="div_yield">
+                    <dt>Div Yield</dt>
+                    <dd class="fund-val">0.82%</dd>
+                </div>
+            </dl>
+        </section>
+
+        <footer class="site-footer">
+            Market data as of 21-Aug-2026 | Demo Environment
+        </footer>
+    </main>
+</body>
+</html>
